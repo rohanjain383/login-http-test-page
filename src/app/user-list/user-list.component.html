@@ -1,0 +1,6 @@
+<div class="filter-button">
+    <button (click)="filterData()">Filter</button>
+</div>
+<div *ngFor= "let data of theFilteredList">
+<app-card [firstName]="data.firstName" [lastName]="data.lastName" [age]="data.age" [accountId]="data.accountId"></app-card>
+</div>
